@@ -68,7 +68,7 @@ void gait_detection(void *params) {
 
 
         if (below_neg_15 && angle_roll > fire_angle && !fire_on) {
-            ssd1306_clear_screen(&dev, true);         
+            ssd1306_display_text_x3(&dev, 0, "Fire", 5, false);         
             printf("-----Fire ON----\n");  
             
             fire_on = true;
